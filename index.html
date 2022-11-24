@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="style/style.css" rel="stylesheet">
+    <link href="style/fonts.css" rel="stylesheet">
+    <script  type="text/javascript" src="js/script.js"></script>
+    <title>Calculo de média</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Calculo de média</h1> 
+        </div>
+    </header>
+    <main>
+        <form class="tabelas" onsubmit="calcularMedia(event)">
+            <div id="tabela-id">
+                <input type="text" class="caixa-nota" id="nomeAluno" placeholder="Aluno"></input><br>
+                <p></p>
+                <input type="text" class="caixa-nota" id="matriculaAluno" placeholder="Matricula"></input>
+            </div>
+            <div id="tabela-notas">
+                <input type="number" value="" max="10" class="caixa-nota" id="notaPrimeiroTri" placeholder="Primeiro Trimestre"></input><br>
+                <p></p>
+                <input type="number" value="" max="10" class="caixa-nota" id="notaSegundoTri" placeholder="Segundo Trimestre"></input><br>
+                <p></p>
+                <input type="number" value="" max="10" class="caixa-nota" id="notaTerceiroTri" placeholder="Terceiro Trimestre"></input><br>
+                <p></p>
+                <input type="submit" id="botaoCalcular" class="botao" value="Calcular">
+                <input type="reset" id="botaoClear" class="botao" value="Limpar">
+                
+                
+            </div>
+        </form>
+    </main>
+    <h3>Historico</h3>
+        <table>
+            <tr>
+                <th>Aluno</th>
+                <th>Matricula</th>
+                <th>Média</th> 
+            </tr>
+                <td id="resultadoAluno"></td>
+                <td id="resultadoMatricula"></td>
+                <td id="resultadoMedia"></td>
+        </table>
+        
+</body>
+</html>
